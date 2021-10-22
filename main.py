@@ -15,10 +15,6 @@ import time
 app = Flask(__name__)
 
 
-@app.errorhandler(Exception)
-def all_exception_handler(error):
-   return redirect('/')
-
 @app.route('/',methods=['GET','POST'])
 def index():
  if request.method == 'POST':
