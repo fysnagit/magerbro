@@ -3,7 +3,6 @@ import docx
 from docx.shared import Cm
 from fuction import working
 from randomstring import rs_generator
-from docx2pdf import convert
 import os
 import time
 
