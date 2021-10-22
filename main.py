@@ -47,7 +47,6 @@ def index():
   
   name_file = rs_generator()
   test.save(f'{name_file}.docx')
-  convert(f"{name_file}.docx")
   return send_file(f"{name_file}.docx",as_attachment=True)
  return render_template(f'index.html')
 
