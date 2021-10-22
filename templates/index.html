@@ -1,0 +1,42 @@
+<html>
+ <head>
+  <title>Nulis Lur</title>
+  <link rel="stylesheet" href="/static/ceeses.css">
+
+ </head>
+ <body>
+  <div class="testbox">
+   <form action="{{url_for('index')}}" method="post">
+     <div class="banner">
+       <h1>Nulis Lur</h1>
+     </div>
+     <div class="item">
+       <p>Perintah Dasar</p>
+       <p>kiri**;    Untuk Paragraf rata kiri</p>
+       <p>kanan**;   Untuk Paragraf rata kanan</p>
+       <p>tengah**;  Untuk Paragraf rata tengah</p>
+       <p>rata**;    Untuk Paragraf rata kanan-kiri (justify)</p>
+       <br>
+       <p>Cara Penulisan :</p>
+       <p>kiri**;Tulis Text Mu disini</p>
+     </div>
+     <p style="text-align: center;">Margin</p>
+     <p style="text-align: center;">
+       <span>Kiri : </span><input value="4" type="text" style="max-width: 50px;" name="mkiri">
+       <span>Atas : </span><input value="3" type="text" style="max-width: 50px;" name="matas">
+       <span>Kanan : </span><input value="3" type="text" style="max-width: 50px;" name="mkanan">
+       <span>Bawah : </span><input value="3" type="text" style="max-width: 50px;" name="mbawah">
+      </p>
+     <div class="item">
+       <br>
+       <p style="text-align: center;">Ketik Teks disini</p>
+       <textarea rows="10" name="teksnya">tengah**;Dasar Teori&#13;&#10;rata**;Ini adalah isi dari dasar teori</textarea>
+     </div>
+     <div class="btn-block">
+       <button type="submit">Convert Now</button>
+     </div>
+   </form>
+ </div>
+
+ </body>
+</html>
